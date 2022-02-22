@@ -1,0 +1,177 @@
+/*
+SQLyog Community v13.1.7 (64 bit)
+MySQL - 10.4.22-MariaDB : Database - viktoriia
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`viktoriia` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `viktoriia`;
+
+/*Table structure for table `flag` */
+
+DROP TABLE IF EXISTS `flag`;
+
+CREATE TABLE `flag` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `flag` int(11) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=203177 DEFAULT CHARSET=utf8;
+
+/*Data for the table `flag` */
+
+insert  into `flag`(`id`,`flag`) values 
+(203037,4514),
+(203036,4513),
+(203029,4506),
+(203028,4505),
+(203027,4504),
+(203026,4503),
+(203025,4502),
+(203024,4501),
+(203023,4500),
+(203022,4499),
+(203021,4498),
+(203020,4497),
+(203019,4496),
+(203018,4495),
+(203017,4494),
+(203016,4493),
+(203015,4492),
+(203014,4491),
+(203013,4490),
+(203012,4314),
+(203011,4313),
+(203010,4312),
+(203009,4311),
+(203008,4310),
+(203007,4309),
+(203006,4308),
+(203005,4307),
+(203004,4306),
+(202941,3893),
+(202940,3892),
+(202939,3891),
+(202938,3890),
+(202958,3910),
+(202959,3911),
+(202960,3912),
+(202961,3913),
+(202962,3914),
+(202963,4090),
+(202993,4295),
+(202992,4294),
+(202991,4293),
+(202990,4292),
+(202989,4291),
+(202988,4290),
+(202987,4114),
+(202986,4113),
+(202985,4112),
+(202984,4111),
+(202983,4110),
+(202982,4109),
+(203035,4512),
+(203034,4511),
+(203033,4510),
+(203032,4509),
+(203031,4508),
+(203030,4507),
+(202952,3904),
+(203001,4303),
+(203002,4304),
+(203003,4305),
+(202943,3895),
+(202942,3894),
+(202977,4104),
+(202976,4103),
+(202975,4102),
+(202974,4101),
+(202973,4100),
+(202972,4099),
+(202971,4098),
+(202970,4097),
+(202951,3903),
+(202950,3902),
+(202949,3901),
+(202948,3900),
+(202946,3898),
+(202945,3897),
+(202944,3896),
+(202994,4296),
+(202995,4297),
+(202996,4298),
+(202997,4299),
+(202998,4300),
+(202999,4301),
+(203000,4302),
+(202969,4096),
+(202968,4095),
+(202967,4094),
+(202953,3905),
+(202947,3899),
+(202966,4093),
+(202965,4092),
+(202964,4091),
+(202954,3906),
+(202955,3907),
+(202956,3908),
+(202957,3909),
+(202978,4105),
+(202980,4107),
+(202981,4108),
+(202979,4106);
+
+/*Table structure for table `logos` */
+
+DROP TABLE IF EXISTS `logos`;
+
+CREATE TABLE `logos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `url` varchar(100) NOT NULL,
+  `top` int(11) NOT NULL,
+  `left` int(11) NOT NULL,
+  `width` int(11) NOT NULL,
+  `height` int(11) NOT NULL,
+  `stPosX` int(11) NOT NULL,
+  `stPosY` int(11) NOT NULL,
+  `xlen` int(11) NOT NULL,
+  `ylen` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+
+/*Data for the table `logos` */
+
+/* Procedure structure for procedure `load_foo_test_data` */
+
+/*!50003 DROP PROCEDURE IF EXISTS  `load_foo_test_data` */;
+
+DELIMITER $$
+
+/*!50003 CREATE DEFINER=`root`@`localhost` PROCEDURE `load_foo_test_data`()
+begin
+declare v_max int unsigned default 200000;
+declare v_counter int unsigned default 0;
+  truncate table flag;
+  start transaction;
+  while v_counter < v_max do
+    insert into flag (flag) values ( 0 );
+    set v_counter=v_counter+1;
+  end while;
+  commit;
+end */$$
+DELIMITER ;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

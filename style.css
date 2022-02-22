@@ -1,0 +1,303 @@
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.mymodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: auto; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    max-width: 40%;
+    box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+    3px 3px 7px rgba(94, 104, 121, 0.377);
+  }
+  
+  /* Modal Content */
+  .mymodal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+}
+.modal-autoheight .modal-body {
+    position: relative;
+    overflow-y: auto;
+    min-height: 600px !important;
+    max-height: 2000px !important;
+  }
+.modalP {
+    margin-bottom: 5px;
+}
+.modalSmallP{
+    margin-bottom: 0px;
+}
+p.center{
+    text-align: center;
+}
+div.center {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+}
+.form-input {
+    width:450px;
+    padding:20px;
+    background:#fff;
+}
+.form-input img {
+    width:100%;
+    display:none;
+    margin-bottom:30px;
+}
+.form-input input {
+    display:none;
+  }
+  
+.form-input label {
+    display:block;
+    width:100%;
+    height:45px;
+    padding-left: 5%;
+    line-height:50px;
+    border: 1px solid #ced4da;
+    text-align:left;
+    background:#ffffff;
+    color:gray;
+    font-size:15px;
+    font-family:"Open Sans",sans-serif;
+    font-weight:50;
+    border-radius:5px;
+    cursor:pointer;
+    margin-bottom: 0px;
+  }
+.form-input label img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: block;
+    float: right;
+    margin: 10px;
+ }
+ .form-center{
+     text-align: center;
+ }
+ .centerAlign{
+     width: 90%;
+     height: 50px;
+     margin: auto;
+ }
+ .buyBtn{
+     width: 50%;
+     border-radius: 10px;
+     font-size: 2vw;
+     padding: 0;
+ }
+
+ #mainNav{
+    background: white;
+    box-shadow: -3px -3px 7px rgba(94, 104, 121, 0.377),
+    3px 3px 7px rgba(94, 104, 121, 0.377);
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+ }
+ .ms-auto{
+     margin-left: auto;
+ }
+ 
+
+.container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar > .container{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .navbar-nav{
+     flex-direction: row;
+ }
+ .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 601px){
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+    #toPC {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px){
+    #navbarResponsive{
+        display: flex;
+        flex-basis: auto;
+    }
+}
+ .mx-lg-1{
+     margin-left: 0.25rem;
+     margin-right: 00.25rem ;
+ }
+ .px-lg-3{
+     padding: 10%;
+     color: black;
+ }
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.fixed-bottom{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.title{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow-x: hidden;
+    background: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.copyright{
+    background: #f2f2f2;
+    color: #adadad;
+    overflow-x: hidden;
+    width: 100%;
+    padding-left: 0px;
+}
+#alert{
+    position: fixed;
+    top: 30%;
+    right: 0%;
+    z-index: 10000;
+    display: none;
+}
+.title p{
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+}
+#myBoard{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#crossBtn{
+    display: none;
+}
+
+canvas{
+    margin-top: 240px;
+}
+
+.error{
+    color: red;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        font-size: 10px;
+    }
+    #navbarResponsive {
+        font-size: 15px;
+    }
+    .px-lg-3{
+        padding: 0;
+    }
+    .modalP, .modalSmallP{
+        font-size: 10px;
+    }
+    .form-input{
+        padding: 0;
+    }
+    .form-input label{
+        font-size: 8px;
+        height:20px;
+        line-height: 20px;
+    }
+    .form-input p{
+        font-size: 10px;
+    }
+    p.center{
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+    .form-input label img{
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+    }
+    .form-control.centerAlign{
+        height:20px;
+        font-size: 10px;
+    }
+    span{
+        font-size: 10px;
+    }
+    .buyBtn{
+        font-size: 10px;
+    }
+    canvas{
+        margin-top: 160px;
+    }
+    p.error{
+        font-size: 8px;
+    }
+
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .navbar-nav{
+        flex-direction: column;
+    }
+
+    .mx-lg-1{
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .navbar-toggler{
+        padding: 0;
+    }
+}
